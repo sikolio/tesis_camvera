@@ -14,7 +14,7 @@ function InitLineChart(data) {
       .attr("width", WIDTH)
       .attr("height", HEIGHT + 400)
     xScale = d3.scale.linear().range([MARGINS.left, WIDTH - MARGINS.right]).domain([0, 50]),
-    yScale = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain([35, 290]),
+    yScale = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain([0, 500]),
     xAxis = d3.svg.axis().scale(xScale),
     yAxis = d3.svg.axis().scale(yScale).orient("left");
   vis.append("svg:g")
