@@ -19,28 +19,28 @@ function getGrafico(req, res) {
 }
 
 function getDataPoints(req, res) {
-  res.json({"Puntos": {"60º 40% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 10.49548119, "Consistencia" : 36.395, "Indice_de_flujo" : 0.527724007 },
-  "60º 30% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 18.71787689, "Consistencia" : 49.521, "Indice_de_flujo" : 0.467246325 },
-  "60º 20% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 15.23809168, "Consistencia" : 29.535, "Indice_de_flujo" : 0.491927725 },
-  "60º manjar" : { "Esfuerzo_de_fluencia" : 23.769178, "Consistencia" : 32.415, "Indice_de_flujo" : 0.432366386 },
-  "50º 40% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 28.90466746, "Consistencia" : 94.223, "Indice_de_flujo" : 0.399189175 },
-  "50º 30% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 27.38927712, "Consistencia" : 102.149, "Indice_de_flujo" : 0.366672641 },
-  "50º 20% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 23.60080129, "Consistencia" : 65.342, "Indice_de_flujo" : 0.41611762 },
-  "50º manjar" : { "Esfuerzo_de_fluencia" : 31.71094585, "Consistencia" : 51.167, "Indice_de_flujo" : 0.352611523 },
-  "40º 40% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 68.75382065, "Consistencia" : 141.485, "Indice_de_flujo" : 0.337405837 },
-  "40º 30% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 48.82924405, "Consistencia" : 139.734, "Indice_de_flujo" : 0.326635066 },
-  "40º 20% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 43.77794294, "Consistencia" : 113.570, "Indice_de_flujo" : 0.321152981 },
-  "40º manjar" : { "Esfuerzo_de_fluencia" : 36.48161912, "Consistencia" : 95.157, "Indice_de_flujo" : 0.34590385 },
-  "30º 40% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 118.9862039, "Consistencia" : 120.755, "Indice_de_flujo" : 0.674096154 },
-  "30º 30% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 80.5401899, "Consistencia" : 146.958, "Indice_de_flujo" : 0.369915469 },
-  "30º 20% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 71.84072688, "Consistencia" : 147.070, "Indice_de_flujo" : 0.332739686 },
-  "35º manjar" : { "Esfuerzo_de_fluencia" : 53.31928948, "Consistencia" : 129.950, "Indice_de_flujo" : 0.302541829 }}
+  res.json({"Puntos": [{"Nombre" :"60º 40% microesferas de vidrio", "Esfuerzo_de_fluencia" : 10.49548119, "Consistencia" : 36.395, "Indice_de_flujo" : 0.527724007 },
+  {"Nombre" :"60º 30% microesferas de vidrio", "Esfuerzo_de_fluencia" : 18.71787689, "Consistencia" : 49.521, "Indice_de_flujo" : 0.467246325 },
+  {"Nombre" :"60º 20% microesferas de vidrio", "Esfuerzo_de_fluencia" : 15.23809168, "Consistencia" : 29.535, "Indice_de_flujo" : 0.491927725 },
+  {"Nombre" :"60º manjar", "Esfuerzo_de_fluencia" : 23.769178, "Consistencia" : 32.415, "Indice_de_flujo" : 0.432366386 },
+  {"Nombre" :"50º 40% microesferas de vidrio", "Esfuerzo_de_fluencia" : 28.90466746, "Consistencia" : 94.223, "Indice_de_flujo" : 0.399189175 },
+  {"Nombre" :"50º 30% microesferas de vidrio", "Esfuerzo_de_fluencia" : 27.38927712, "Consistencia" : 102.149, "Indice_de_flujo" : 0.366672641 },
+  {"Nombre" :"50º 20% microesferas de vidrio", "Esfuerzo_de_fluencia" : 23.60080129, "Consistencia" : 65.342, "Indice_de_flujo" : 0.41611762 },
+  {"Nombre" :"50º manjar", "Esfuerzo_de_fluencia" : 31.71094585, "Consistencia" : 51.167, "Indice_de_flujo" : 0.352611523 },
+  {"Nombre" :"40º 40% microesferas de vidrio", "Esfuerzo_de_fluencia" : 68.75382065, "Consistencia" : 141.485, "Indice_de_flujo" : 0.337405837 },
+  {"Nombre" :"40º 30% microesferas de vidrio", "Esfuerzo_de_fluencia" : 48.82924405, "Consistencia" : 139.734, "Indice_de_flujo" : 0.326635066 },
+  {"Nombre" :"40º 20% microesferas de vidrio", "Esfuerzo_de_fluencia" : 43.77794294, "Consistencia" : 113.570, "Indice_de_flujo" : 0.321152981 },
+  {"Nombre" :"40º manjar", "Esfuerzo_de_fluencia" : 36.48161912, "Consistencia" : 95.157, "Indice_de_flujo" : 0.34590385 },
+  {"Nombre" :"30º 40% microesferas de vidrio", "Esfuerzo_de_fluencia" : 118.9862039, "Consistencia" : 120.755, "Indice_de_flujo" : 0.674096154 },
+  {"Nombre" :"30º 30% microesferas de vidrio", "Esfuerzo_de_fluencia" : 80.5401899, "Consistencia" : 146.958, "Indice_de_flujo" : 0.369915469 },
+  {"Nombre" :"30º 20% microesferas de vidrio", "Esfuerzo_de_fluencia" : 71.84072688, "Consistencia" : 147.070, "Indice_de_flujo" : 0.332739686 },
+  {"Nombre" :"35º manjar", "Esfuerzo_de_fluencia" : 53.31928948, "Consistencia" : 129.950, "Indice_de_flujo" : 0.302541829 }]
 });
 }
 
 function getDataLine(req, res) {
   res.json({
-      "Reograma 60º 40% microesferas": [
+      "60º 40% microesferas de vidrio": [
         { "strain" : 0.953, "stress" : 	35.48232259 },
         { "strain" : 2.04, "stress" : 	53.02058204 },
         { "strain" : 3.06, "stress" : 	65.67076504 },
@@ -91,7 +91,7 @@ function getDataLine(req, res) {
         { "strain" : 49, "stress" : 	283.7933837 },
         { "strain" : 50, "stress" : 	286.8352201 }
       ],
-      "Reograma 60º 30% microesferas": [
+      "60º 30% microesferas de vidrio": [
         { "strain" : 0.985, "stress" : 	49.17274399 },
         { "strain" : 2.04, "stress" : 	69.09790801 },
         { "strain" : 3.06, "stress" : 	83.51084781 },
@@ -141,7 +141,7 @@ function getDataLine(req, res) {
         { "strain" : 48, "stress" : 	302.235261 },
         { "strain" : 49, "stress" : 	305.1611538 },
         { "strain" : 50, "stress" : 	308.0554043 }
-      ]
+      ],
         "Reograma 60º 20% microesferas": [
           { "strain" : 0.947, "stress" : 	28.75441528 },
           { "strain" : 2.04, "stress" : 	41.94249926 },
@@ -192,7 +192,7 @@ function getDataLine(req, res) {
           { "strain" : 48, "stress" : 	198.329729 },
           { "strain" : 49, "stress" : 	200.351664 },
           { "strain" : 50, "stress" : 	202.3527404 }
-          ]
+        ],
           "Reograma 60º manjar" : [
             { "strain" : 0.937, "stress" : 	31.51573451 },
             { "strain" : 2.04, "stress" : 	44.11842104 },
@@ -243,7 +243,7 @@ function getDataLine(req, res) {
             { "strain" : 48, "stress" : 	172.8456615 },
             { "strain" : 49, "stress" : 	174.3934848 },
             { "strain" : 50, "stress" : 	175.9234794 }
-          ]
+          ],
           "Reograma 50º 40% microesferas" : [
             { "strain" : 0.939, "stress" : 	91.88515836 },
             { "strain" : 2.03, "stress" : 	124.9988616 },
@@ -294,7 +294,7 @@ function getDataLine(req, res) {
             { "strain" : 44.4, "stress" : 	428.3259802 },
             { "strain" : 44.8, "stress" : 	429.8622195 },
             { "strain" : 45.4, "stress" : 	432.1512042 }
-          ]
+          ],
           "Reograma 50º 30% microesferas" : [
             { "strain" : 0.985, "stress" : 	101.584563 },
             { "strain" : 2.04, "stress" : 	132.6683667 },
@@ -345,7 +345,7 @@ function getDataLine(req, res) {
             { "strain" : 48, "stress" : 	422.3763915 },
             { "strain" : 49, "stress" : 	425.5818826 },
             { "strain" : 49.8, "stress" : 	428.1165691 }
-          ]
+          ],
           "Reograma 50º 20% microesferas" : [
             { "strain" : 0.92, "stress" : 	63.1140106 },
             { "strain" : 2.04, "stress" : 	87.90971455 },
@@ -396,7 +396,7 @@ function getDataLine(req, res) {
             { "strain" : 48, "stress" : 	327.1812474 },
             { "strain" : 49, "stress" : 	330.000556 },
             { "strain" : 50, "stress" : 	332.7864663 }
-          ]
+          ],
           "Reograma 50º manjar" : [
             { "strain" : 0.932, "stress" : 	49.91159227 },
             { "strain" : 2.03, "stress" : 	65.67685874 },
@@ -447,7 +447,7 @@ function getDataLine(req, res) {
             { "strain" : 48, "stress" : 	200.3598783 },
             { "strain" : 49, "stress" : 	201.821923 },
             { "strain" : 50, "stress" : 	203.2647764 }
-          ]
+          ],
           "Reograma 40º 40% microesferas" : [
             { "strain" : 0.898, "stress" : 	136.4413696 },
             { "strain" : 2.04, "stress" : 	179.9624648 },
@@ -498,7 +498,7 @@ function getDataLine(req, res) {
             { "strain" : 20.7, "stress" : 	393.3027503 },
             { "strain" : 20.8, "stress" : 	393.9428026 },
             { "strain" : 20.9, "stress" : 	394.5808192 }
-          ]
+          ],
           "Reograma 40º 30% microesferas" : [
           { "strain" : 0.981, "stress" : 	138.8610106 },
           { "strain" : 2.04, "stress" : 	176.3752272 },
@@ -549,7 +549,7 @@ function getDataLine(req, res) {
           { "strain" : 27.8, "stress" : 	413.9779251 },
           { "strain" : 28, "stress" : 	414.9483819 },
           { "strain" : 28.4, "stress" : 	416.875381 }
-        ]
+        ],
         "Reograma 40º 20% microesferas" : [
           { "strain" : 0.902, "stress" : 	109.8697337 },
           { "strain" : 2.04, "stress" : 	142.7914741 },
@@ -600,7 +600,7 @@ function getDataLine(req, res) {
           { "strain" : 48, "stress" : 	393.7306838 },
           { "strain" : 48.9, "stress" : 	396.0866473 },
           { "strain" : 50, "stress" : 	398.9265191 }
-        ]
+        ],
         "Reograma 40º manjar" : [
           { "strain" : 0.89, "stress" : 	91.39727735 },
           { "strain" : 2.04, "stress" : 	121.7703957 },
@@ -651,7 +651,7 @@ function getDataLine(req, res) {
           { "strain" : 48, "stress" : 	363.0674101 },
           { "strain" : 49, "stress" : 	365.666169 },
           { "strain" : 50, "stress" : 	368.2304646 }
-        ]
+        ],
         "Reograma 30º 40% microesferas" : [
           { "strain" : 0.892, "stress" : 	197.5138328 },
           { "strain" : 2.04, "stress" : 	252.0893526 },
@@ -702,7 +702,7 @@ function getDataLine(req, res) {
           { "strain" : 5.44, "stress" : 	336.6542632 },
           { "strain" : 5.48, "stress" : 	337.3824402 },
           { "strain" : 5.48, "stress" : 	337.3824402 }
-        ]
+        ],
         "Reograma 30º 30% microesferas" : [
           { "strain" : 0.904, "stress" : 	141.5729419 },
           { "strain" : 2.03, "stress" : 	190.959722 },
@@ -753,7 +753,7 @@ function getDataLine(req, res) {
           { "strain" : 12.9, "stress" : 	378.4587465 },
           { "strain" : 12.9, "stress" : 	378.4587465 },
           { "strain" : 13, "stress" : 	379.5413611 }
-        ]
+        ],
         "Reograma 30º 20% microesferas" : [
           { "strain" : 0.887, "stress" : 	141.3178932 },
           { "strain" : 2.04, "stress" : 	186.4452302 },
@@ -804,7 +804,7 @@ function getDataLine(req, res) {
           { "strain" : 18.4, "stress" : 	387.5967419 },
           { "strain" : 18.6, "stress" : 	388.9935237 },
           { "strain" : 18.8, "stress" : 	390.3803195 }
-        ]
+        ],
         "Reograma 35º manjar" : [
         { "strain" : 0.897, "stress" : 	125.7455322 },
         { "strain" : 2.04, "stress" : 	161.2318737 },
