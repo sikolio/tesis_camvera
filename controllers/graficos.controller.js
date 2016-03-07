@@ -40,7 +40,7 @@ function getDataPoints(req, res) {
 
 function getDataLine(req, res) {
   res.json({
-      "Reograma 60grados 40percent": [
+      "60º 40% microesferas de vidrio": [
         { "strain" : 0.953, "stress" : 	35.48232259 },
         { "strain" : 2.04, "stress" : 	53.02058204 },
         { "strain" : 3.06, "stress" : 	65.67076504 },
@@ -91,7 +91,7 @@ function getDataLine(req, res) {
         { "strain" : 49, "stress" : 	283.7933837 },
         { "strain" : 50, "stress" : 	286.8352201 }
       ],
-      "Reograma 60grados 30percent": [
+      "60º 30% microesferas de vidrio": [
         { "strain" : 0.985, "stress" : 	49.17274399 },
         { "strain" : 2.04, "stress" : 	69.09790801 },
         { "strain" : 3.06, "stress" : 	83.51084781 },

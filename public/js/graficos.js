@@ -38,7 +38,9 @@ function InitLineChart(data) {
 
   var index = 0;
   for (var key in data){
-    ACTIVE[key.replace(/\s+/g, '')] = true;
+    var arr = /((\w*)º ((\w+)% )?(\w+( \w+ \w+)?))/.exec(key);
+    var newkey = arr[2] + arr[4] + arr[5]
+    ACTIVE[newkey.replace(/\s+/g, '')] = true;
     vis.append('svg:path')
       .attr('d', lineGen(data[key]))
       .attr('stroke', function(){
@@ -47,14 +49,16 @@ function InitLineChart(data) {
       .attr("class", "line")
       .attr("stroke-width", 4)
       .attr("fill", "none")
-      .attr("id", 'tag'+key.replace(/\s+/g, ''));
+      .attr("id", 'tag'+newkey.replace(/\s+/g, ''));
     vis.append('svg:text')
       .text(key)
-      .attr("id", key.replace(/\s+/g, ''))
+      .style("fill", color(index))
+      .attr("id", newkey.replace(/\s+/g, ''))
       .attr("x", 100 + (index%3)*300)
       .attr("y", 640 + (Math.floor(index/3))*30)
       .attr("class", "legend")
       .on("click", function() {
+
         console.log(this.id)
         linekey = this.id;
         var active = ACTIVE[linekey] ? true : false,
