@@ -25,6 +25,18 @@ function InitLineChart(data) {
     .attr("class", "y axis")
     .attr("transform", "translate(" + (MARGINS.left) + ",0)")
     .call(yAxis);
+  vis.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 6)
+    .attr("x", MARGINS.top - HEIGHT + 550)
+    .attr("dy", ".71em")
+    .style("text-anchor", "end")
+    .text("Stress [Pa]");
+  vis.append("text")
+    .attr("transform","translate(" + (WIDTH - 50) + ",650)")
+    .attr("y", -5)
+    .style("text-anchor", "middle")
+    .text("Strain [1/s]");
 
   var lineGen = d3.svg.line()
   .x(function(d) {
