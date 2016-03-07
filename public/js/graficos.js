@@ -2,7 +2,6 @@ function InitLineChart(data) {
 
   var color = d3.scale.category20(),
     ACTIVE = {},
-    TAGS = {},
     WIDTH = 1000,
     HEIGHT = 600,
     MARGINS = {
@@ -40,7 +39,6 @@ function InitLineChart(data) {
   var index = 0;
   for (var key in data){
     ACTIVE[key.replace(/\s+/g, '')] = true;
-    TAGS[key] = key.replace(/\s+/g, '');
     vis.append('svg:path')
       .attr('d', lineGen(data[key]))
       .attr('stroke', function(){
@@ -57,6 +55,7 @@ function InitLineChart(data) {
       .attr("y", 640 + (Math.floor(index/3))*30)
       .attr("class", "legend")
       .on("click", function() {
+        console.log(this.id)
         linekey = this.id;
         var active = ACTIVE[linekey] ? true : false,
         newOpacity = active ? 0 : 1;
@@ -76,13 +75,15 @@ function InitLineChart(data) {
 
 function InitPointChart(data) {
   console.log(data);
-  var Esfuerzo_de_fluencia = [],
+  var Leyenda = [],
+      Esfuerzo_de_fluencia = [],
       Consistencia = [],
       Indice_de_Flujo = [];
   data.Puntos.forEach(function(d) {
+    Leyenda.push(d.Nombre);
     Esfuerzo_de_fluencia.push(d.Esfuerzo_de_fluencia);
     Consistencia.push(d.Consistencia);
-    Indice_de_Flujo.push(d.Indice_de_Flujo);
+    Indice_de_Flujo.push(d.Indice_de_flujo);
   });
   var color = d3.scale.category20(),
     WIDTH = 330,
@@ -168,14 +169,17 @@ function InitPointChart(data) {
       .attr("cx", xScale(1))
       .attr("cy", yScale3(d))
       .style("fill", color(i));
+  });
+
+  Leyenda.forEach(function (d, i) {
     vis4.append('svg:text')
-      .text("Experimento " + i)
+      .text(d)
       .style("fill", color(i))
       .attr("id", "Legend Experimento " + i)
       .attr("x", 100 + (i%3)*300)
       .attr("y", 30 + (Math.floor(i/3))*40)
       .attr("class", "legendPuntos e" + i)
-  });
+  })
 
   d3.selectAll(".legendPuntos")
     .on("mouseover", function() {
