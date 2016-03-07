@@ -19,19 +19,23 @@ function getGrafico(req, res) {
 }
 
 function getDataPoints(req, res) {
-  res.json({"Puntos": [{ "Esfuerzo_de_fluencia" : 53.31928948, "Consistencia" : 129.950, "Indice_de_Flujo" : 0.302541829 },
-  { "Esfuerzo_de_fluencia" : 71.84072688, "Consistencia" : 147.070, "Indice_de_Flujo" : 0.332739686 },
-  { "Esfuerzo_de_fluencia" : 80.5401899, "Consistencia" : 146.958, "Indice_de_Flujo" : 0.369915469 },
-  { "Esfuerzo_de_fluencia" : 118.9862039, "Consistencia" : 120.755, "Indice_de_Flujo" : 0.674096154 },
-  { "Esfuerzo_de_fluencia" : 36.48161912, "Consistencia" : 95.157, "Indice_de_Flujo" : 0.34590385 },
-  { "Esfuerzo_de_fluencia" : 43.77794294, "Consistencia" : 113.570, "Indice_de_Flujo" : 0.321152981 },
-  { "Esfuerzo_de_fluencia" : 48.82924405, "Consistencia" : 139.734, "Indice_de_Flujo" : 0.326635066 },
-  { "Esfuerzo_de_fluencia" : 68.75382065, "Consistencia" : 141.485, "Indice_de_Flujo" : 0.337405837 },
-  { "Esfuerzo_de_fluencia" : 31.71094585, "Consistencia" : 51.167, "Indice_de_Flujo" : 0.352611523 },
-  { "Esfuerzo_de_fluencia" : 23.60080129, "Consistencia" : 65.342, "Indice_de_Flujo" : 0.41611762 },
-  { "Esfuerzo_de_fluencia" : 27.38927712, "Consistencia" : 102.149, "Indice_de_Flujo" : 0.366672641 },
-  { "Esfuerzo_de_fluencia" : 28.90466746, "Consistencia" : 94.223, "Indice_de_Flujo" : 0.399189175 },
-  { "Esfuerzo_de_fluencia" : 23.769178, "Consistencia" : 32.415, "Indice_de_Flujo" : 0.432366386 }]});
+  res.json({"Puntos": {"60º 40% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 10.49548119, "Consistencia" : 36.395, "Indice_de_flujo" : 0.527724007 },
+  "60º 30% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 18.71787689, "Consistencia" : 49.521, "Indice_de_flujo" : 0.467246325 },
+  "60º 20% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 15.23809168, "Consistencia" : 29.535, "Indice_de_flujo" : 0.491927725 },
+  "60º manjar" : { "Esfuerzo_de_fluencia" : 23.769178, "Consistencia" : 32.415, "Indice_de_flujo" : 0.432366386 },
+  "50º 40% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 28.90466746, "Consistencia" : 94.223, "Indice_de_flujo" : 0.399189175 },
+  "50º 30% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 27.38927712, "Consistencia" : 102.149, "Indice_de_flujo" : 0.366672641 },
+  "50º 20% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 23.60080129, "Consistencia" : 65.342, "Indice_de_flujo" : 0.41611762 },
+  "50º manjar" : { "Esfuerzo_de_fluencia" : 31.71094585, "Consistencia" : 51.167, "Indice_de_flujo" : 0.352611523 },
+  "40º 40% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 68.75382065, "Consistencia" : 141.485, "Indice_de_flujo" : 0.337405837 },
+  "40º 30% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 48.82924405, "Consistencia" : 139.734, "Indice_de_flujo" : 0.326635066 },
+  "40º 20% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 43.77794294, "Consistencia" : 113.570, "Indice_de_flujo" : 0.321152981 },
+  "40º manjar" : { "Esfuerzo_de_fluencia" : 36.48161912, "Consistencia" : 95.157, "Indice_de_flujo" : 0.34590385 },
+  "30º 40% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 118.9862039, "Consistencia" : 120.755, "Indice_de_flujo" : 0.674096154 },
+  "30º 30% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 80.5401899, "Consistencia" : 146.958, "Indice_de_flujo" : 0.369915469 },
+  "30º 20% microesferas de vidrio" : { "Esfuerzo_de_fluencia" : 71.84072688, "Consistencia" : 147.070, "Indice_de_flujo" : 0.332739686 },
+  "35º manjar" : { "Esfuerzo_de_fluencia" : 53.31928948, "Consistencia" : 129.950, "Indice_de_flujo" : 0.302541829 }}
+});
 }
 
 function getDataLine(req, res) {
