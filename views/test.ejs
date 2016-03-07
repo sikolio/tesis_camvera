@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=12">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Jardín Arcoiris</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="app-content/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="app-content/css/simple-sidebar.css" rel="stylesheet">
+    <!-- App Custom CSS -->
+    <link rel="stylesheet" href="app-content/css/app.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Jardín Arcoiris
+                    </a>
+                </li>
+                <li id="tab-cuentas" ng-class="{active: activeTab === 'account'}" style="display: none;">
+                    <a ui-sref="account">Cuentas</a>
+                </li>
+                <li id="tab-cameras" ng-class="{active: activeTab === 'cameras'}">
+                    <a ui-sref="cameras">Camaras</a>
+                </li>
+                <li>
+                    <a href="/login" target="_self">Logout</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12" ui-view>
+                        <!-- App content -->
+                    </div>
+                    <div class="col-lg-12">
+                      <a href="#menu-toggle" class="btn-block btn btn-lg btn-primary" id="menu-toggle">Toggle Menu</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="app-content/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="app-content/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="app-content/js/angular-ui-router.js"></script>
+
+    <!-- application scripts -->
+    <script src="app-content/js/socket.io.js"></script>
+    <script src="app.js"></script>
+    <script src="app-services/user.service.js"></script>
+    <script src="app-services/flash.service.js"></script>
+    <script src="app-services/camera.service.js"></script>
+    <script src="account/index.controller.js"></script>
+    <script src="camera/index.controller.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "Graficos_Reologias",
+  "version": "0.1.0",
+  "description": "Graficos para la tesis de Camila Vera",
+  "author": "Alfonso Concha <alfonso@tuapp.org",
+  "license": "MIT",
+  "main": "server.js",
+  "dependencies":{
+    "d3": "latest",
+    "express": "latest",
+    "ejs": "latest",
+    "q": "latest",
+    "body-parser": "latest",
+    "rootpath": "latest",
+    "request": "latest"
+  }
+}
