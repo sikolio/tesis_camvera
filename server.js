@@ -8,6 +8,8 @@ var bodyParser = require('body-parser');
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 
+app.set('port', (process.env.PORT || 3000));
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -19,6 +21,6 @@ app.get('/', function (req, res) {
   return res.redirect('/graficos');
 })
 
-var server = app.listen(3000, function () {
-  console.log('Server listening at http://' + server.address().address + ':' + server.address().port);
+var server = app.listen(app.get('port'), function () {
+  console.log('Node app is running on port', app.get('port'));
 });
