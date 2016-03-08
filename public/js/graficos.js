@@ -28,12 +28,12 @@ function InitLineChart(data) {
   vis.append("text")
     .attr("transform", "rotate(-90)")
     .attr("y", 6)
-    .attr("x", MARGINS.top - HEIGHT + 550)
+    .attr("x", MARGINS.top - HEIGHT + 570)
     .attr("dy", ".71em")
     .style("text-anchor", "end")
     .text("Stress [Pa]");
   vis.append("text")
-    .attr("transform","translate(" + (WIDTH - 50) + ",650)")
+    .attr("transform","translate(" + (WIDTH - 50) + ",620)")
     .attr("y", -5)
     .style("text-anchor", "middle")
     .text("Strain [1/s]");
@@ -143,6 +143,11 @@ function InitPointChart(data) {
       .attr("class", "y axis")
       .attr("transform", "translate(" + (MARGINS.left) + ",0)")
       .call(yAxis1);
+    vis1.append("text")
+      .attr("transform","translate(" + (WIDTH - 140) + ",605)")
+      .attr("y", -5)
+      .style("text-anchor", "middle")
+      .text("Esfuerzo de Fluencia [Pa]");
     vis2.append("svg:g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + (HEIGHT - MARGINS.bottom) + ")")
@@ -151,6 +156,11 @@ function InitPointChart(data) {
       .attr("class", "y axis")
       .attr("transform", "translate(" + (MARGINS.left) + ",0)")
       .call(yAxis2);
+    vis2.append("text")
+      .attr("transform","translate(" + (WIDTH - 160) + ",605)")
+      .attr("y", -5)
+      .style("text-anchor", "middle")
+      .text("Consistencia [Pa*s^n]");
     vis3.append("svg:g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + (HEIGHT - MARGINS.bottom) + ")")
@@ -159,6 +169,11 @@ function InitPointChart(data) {
       .attr("class", "y axis")
       .attr("transform", "translate(" + (MARGINS.left) + ",0)")
       .call(yAxis3);
+    vis3.append("text")
+      .attr("transform","translate(" + (WIDTH - 160) + ",605)")
+      .attr("y", -5)
+      .style("text-anchor", "middle")
+      .text("Indice de flujo");
 
   Esfuerzo_de_fluencia.forEach(function (d, i) {
     vis1.append("circle")
