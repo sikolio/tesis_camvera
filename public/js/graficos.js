@@ -126,9 +126,9 @@ function InitPointChart(data) {
       .attr("height", 300)
       .attr("transform", "translate(0,600)"),
     xScale = d3.scale.linear().range([MARGINS.left, WIDTH - MARGINS.right]).domain([0, 2]).nice(),
-    yScale1 = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain(d3.extent(Esfuerzo_de_fluencia, function(d) { return d;})),
-    yScale2 = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain(d3.extent(Consistencia, function(d) { return d;})),
-    yScale3 = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain(d3.extent(Indice_de_Flujo, function(d) { return d;})),
+    yScale1 = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain(d3.extent(Esfuerzo_de_fluencia, function(d) { return d;})).nice(100),
+    yScale2 = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain(d3.extent(Consistencia, function(d) { return d;})).nice(100),
+    yScale3 = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain(d3.extent(Indice_de_Flujo, function(d) { return d;})).nice(100);
     xAxis = d3.svg.axis()
       .scale(xScale)
       .tickValues([]),
