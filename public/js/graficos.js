@@ -1,5 +1,28 @@
 function InitLineChart(data) {
 
+  var minstrain = 1000000;
+  var maxstrain = -1000000;
+  var minstress = 1000000;
+  var maxstress = -1000000;
+  for (var key in data) {
+    var d = data[key];
+    if (d[0].strain < minstrain) {
+      minstrain = d[0].strain;
+    }
+    if (d[0].stress < minstress) {
+      minstress = d[0].stress;
+    }
+    if (d[d.length-1].strain > maxstrain) {
+      maxstrain = d[d.length-1].strain;
+    }
+    if (d[d.length-1].stress > maxstress) {
+      maxstress = d[d.length-1].stress;
+    }
+  }
+  maxstress = Math.ceil(maxstress);
+  maxstrain = Math.ceil(maxstrain);
+
+
   var color = d3.scale.category20(),
     ACTIVE = {},
     WIDTH = 1000,
@@ -13,8 +36,8 @@ function InitLineChart(data) {
     vis = d3.select("#visualisation").append("svg")
       .attr("width", WIDTH)
       .attr("height", HEIGHT + 400)
-    xScale = d3.scale.linear().range([MARGINS.left, WIDTH - MARGINS.right]).domain([0, 50]),
-    yScale = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain([0, 500]),
+    xScale = d3.scale.linear().range([MARGINS.left, WIDTH - MARGINS.right]).domain([minstrain, maxstrain]),
+    yScale = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain([minstress, maxstress]),
     xAxis = d3.svg.axis().scale(xScale),
     yAxis = d3.svg.axis().scale(yScale).orient("left");
   vis.append("svg:g")
