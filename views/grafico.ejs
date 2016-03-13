@@ -19,7 +19,7 @@
                     <a href="#puntos" id="puntos">Puntos</a>
                 </li>
                 <li>
-                    <a href="#bruto" id="linea_bruto">Bruto</a>
+                    <a href="#bruto" id="brutos">Bruto</a>
                 </li>
             </ul>
         </div>
@@ -73,7 +73,7 @@
       $("#visualisation").empty();
       $.get("graficos/data/bruto", function (data) {
         console.log(data);
-        InitPointChart(data);
+        InitLineChart(data);
       })
     })
 
