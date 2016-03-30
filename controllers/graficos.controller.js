@@ -143,7 +143,7 @@ function getDataLine(req, res) {
         { "strain" : 49, "stress" : 	323.8790307 },
         { "strain" : 50, "stress" : 	326.7732812 }
       ],
-        "Reograma 60º 20% microesferas": [
+        "60º 20% microesferas": [
           { "strain" : 0.947, "stress" : 	43.99250696 },
           { "strain" : 2.04, "stress" : 	57.18059093 },
           { "strain" : 3.06, "stress" : 	66.43909577 },
@@ -194,7 +194,7 @@ function getDataLine(req, res) {
           { "strain" : 49, "stress" : 	215.5897557 },
           { "strain" : 50, "stress" : 	217.5908321 }
         ],
-          "Reograma 60º manjar" : [
+          "60º manjar" : [
             { "strain" : 0.937, "stress" : 	55.28491251 },
             { "strain" : 2.04, "stress" : 	67.88759903 },
             { "strain" : 3.06, "stress" : 	76.34134785 },
@@ -245,7 +245,7 @@ function getDataLine(req, res) {
             { "strain" : 49, "stress" : 	198.1626628 },
             { "strain" : 50, "stress" : 	199.6926574 }
           ],
-          "Reograma 50º 40% microesferas" : [
+          "50º 40% microesferas" : [
             { "strain" : 0.939, "stress" : 	120.7898258 },
             { "strain" : 2.03, "stress" : 	153.903529 },
             { "strain" : 3.06, "stress" : 	176.1534469 },
@@ -296,7 +296,7 @@ function getDataLine(req, res) {
             { "strain" : 44.8, "stress" : 	458.766887 },
             { "strain" : 45.4, "stress" : 	461.0558716 }
           ],
-          "Reograma 50º 30% microesferas" : [
+          "50º 30% microesferas" : [
             { "strain" : 1.0, "stress" : 	129.0 },
             { "strain" : 2.0, "stress" : 	160.1 },
             { "strain" : 3.1, "stress" : 	181.3 },
@@ -347,7 +347,7 @@ function getDataLine(req, res) {
             { "strain" : 49.0, "stress" : 	453.0 },
             { "strain" : 49.8, "stress" : 	455.5 }
           ],
-          "Reograma 50º 20% microesferas" : [
+          "50º 20% microesferas" : [
             { "strain" : 0.92, "stress" : 	86.7148119 },
             { "strain" : 2.04, "stress" : 	111.5105158 },
             { "strain" : 3.06, "stress" : 	127.6674444 },
@@ -398,7 +398,7 @@ function getDataLine(req, res) {
             { "strain" : 49, "stress" : 	353.6013573 },
             { "strain" : 50, "stress" : 	356.3872675 }
           ],
-          "Reograma 50º manjar" : [
+          "50º manjar" : [
             { "strain" : 0.932, "stress" : 	81.62253812 },
             { "strain" : 2.03, "stress" : 	97.38780459 },
             { "strain" : 3.06, "stress" : 	107.6135538 },
@@ -449,7 +449,7 @@ function getDataLine(req, res) {
             { "strain" : 49, "stress" : 	233.5328688 },
             { "strain" : 50, "stress" : 	234.9757223 }
           ],
-          "Reograma 40º 40% microesferas" : [
+          "40º 40% microesferas" : [
             { "strain" : 0.898, "stress" : 	205.1951902 },
             { "strain" : 2.04, "stress" : 	248.7162855 },
             { "strain" : 3.06, "stress" : 	275.0998667 },
@@ -500,7 +500,7 @@ function getDataLine(req, res) {
             { "strain" : 20.8, "stress" : 	462.6966232 },
             { "strain" : 20.9, "stress" : 	463.3346398 }
           ],
-          "Reograma 40º 30% microesferas" : [
+          "40º 30% microesferas" : [
             { "strain" : 0.981, "stress" : 	187.6902547 },
             { "strain" : 2.04, "stress" : 	225.2044713 },
             { "strain" : 3.06, "stress" : 	250.1808817 },
@@ -551,7 +551,7 @@ function getDataLine(req, res) {
             { "strain" : 28, "stress" : 	463.777626 },
             { "strain" : 28.4, "stress" : 	465.7046251 }
         ],
-        "Reograma 40º 20% microesferas" : [
+        "40º 20% microesferas" : [
           { "strain" : 0.902, "stress" : 	153.6476766 },
           { "strain" : 2.04, "stress" : 	186.5694171 },
           { "strain" : 3.06, "stress" : 	206.4281086 },
@@ -602,7 +602,7 @@ function getDataLine(req, res) {
           { "strain" : 48.9, "stress" : 	439.8645902 },
           { "strain" : 50, "stress" : 	442.704462 }
         ],
-        "Reograma 40º manjar" : [
+        "40º manjar" : [
           { "strain" : 0.89, "stress" : 	127.8788965 },
           { "strain" : 2.04, "stress" : 	158.2520148 },
           { "strain" : 3.06, "stress" : 	176.5862085 },
@@ -653,7 +653,7 @@ function getDataLine(req, res) {
           { "strain" : 49, "stress" : 	402.1477881 },
           { "strain" : 50, "stress" : 	404.7120838 }
         ],
-        "Reograma 30º 40% microesferas" : [
+        "30º 40% microesferas" : [
           { "strain" : 0.892, "stress" : 	316.5000367 },
           { "strain" : 2.04, "stress" : 	371.0755565 },
           { "strain" : 3.06, "stress" : 	403.0975272 },
@@ -704,7 +704,7 @@ function getDataLine(req, res) {
           { "strain" : 5.48, "stress" : 	456.3686441 },
           { "strain" : 5.48, "stress" : 	456.3686441 }
         ],
-        "Reograma 30º 30% microesferas" : [
+        "30º 30% microesferas" : [
           { "strain" : 0.904, "stress" : 	222.1131318 },
           { "strain" : 2.03, "stress" : 	271.4999119 },
           { "strain" : 3.06, "stress" : 	302.8046895 },
@@ -755,7 +755,7 @@ function getDataLine(req, res) {
           { "strain" : 12.9, "stress" : 	458.9989364 },
           { "strain" : 13, "stress" : 	460.081551 }
         ],
-        "Reograma 30º 20% microesferas" : [
+        "30º 20% microesferas" : [
           { "strain" : 0.887, "stress" : 	213.1586201 },
           { "strain" : 2.04, "stress" : 	258.2859571 },
           { "strain" : 3.06, "stress" : 	285.2158711 },
@@ -806,7 +806,7 @@ function getDataLine(req, res) {
           { "strain" : 18.6, "stress" : 	460.8342506 },
           { "strain" : 18.8, "stress" : 	462.2210464 }
         ],
-        "Reograma 35º manjar" : [
+        "35º manjar" : [
           { "strain" : 0.897, "stress" : 	179.0648215 },
           { "strain" : 2.04, "stress" : 	214.551163 },
           { "strain" : 3.06, "stress" : 	235.5937712 },
@@ -966,7 +966,7 @@ function getDataBruto(req, res) {
         { "strain" : 49.0, "stress" : 	320.0 },
         { "strain" : 50.0, "stress" : 	323.0 }
       ],
-        "Reograma 60º 20% microesferas": [
+        "60º 20% microesferas": [
           { "strain" : 0.0, "stress" : 	15.2 },
           { "strain" : 0.9, "stress" : 	33.5 },
           { "strain" : 2.0, "stress" : 	57.4 },
@@ -1018,7 +1018,7 @@ function getDataBruto(req, res) {
           { "strain" : 49.0, "stress" : 	215.0 },
           { "strain" : 50.0, "stress" : 	218.0 }
         ],
-          "Reograma 60º manjar" : [
+          "60º manjar" : [
             { "strain" : 0.0, "stress" : 	23.8 },
             { "strain" : 0.9, "stress" : 	35.0 },
             { "strain" : 2.0, "stress" : 	63.6 },
@@ -1070,7 +1070,7 @@ function getDataBruto(req, res) {
             { "strain" : 49.0, "stress" : 	196.0 },
             { "strain" : 50.0, "stress" : 	197.0 }
           ],
-          "Reograma 50º 40% microesferas" : [
+          "50º 40% microesferas" : [
             { "strain" : 0.0, "stress" : 	28.9 },
             { "strain" : 0.9, "stress" : 	65.5 },
             { "strain" : 2.0, "stress" : 	127.0 },
@@ -1122,7 +1122,7 @@ function getDataBruto(req, res) {
             { "strain" : 44.8, "stress" : 	446.0 },
             { "strain" : 45.4, "stress" : 	446.0 }
           ],
-          "Reograma 50º 30% microesferas" : [
+          "50º 30% microesferas" : [
             { "strain" : 0.0, "stress" : 	27.4 },
             { "strain" : 1.0, "stress" : 	94.1 },
             { "strain" : 2.0, "stress" : 	145.0 },
@@ -1174,7 +1174,7 @@ function getDataBruto(req, res) {
             { "strain" : 49.0, "stress" : 	445.0 },
             { "strain" : 49.8, "stress" : 	446.0 }
           ],
-          "Reograma 50º 20% microesferas" : [
+          "50º 20% microesferas" : [
             { "strain" : 0.0, "stress" : 	23.6 },
             { "strain" : 0.9, "stress" : 	46.3 },
             { "strain" : 2.0, "stress" : 	94.9 },
@@ -1226,7 +1226,7 @@ function getDataBruto(req, res) {
             { "strain" : 49.0, "stress" : 	348.0 },
             { "strain" : 50.0, "stress" : 	350.0 }
           ],
-          "Reograma 50º manjar" : [
+          "50º manjar" : [
             { "strain" : 0.0, "stress" : 	31.7 },
             { "strain" : 0.9, "stress" : 	49.1 },
             { "strain" : 2.0, "stress" : 	92.3 },
@@ -1278,7 +1278,7 @@ function getDataBruto(req, res) {
             { "strain" : 49.0, "stress" : 	228.0 },
             { "strain" : 50.0, "stress" : 	232.0 }
           ],
-          "Reograma 40º 40% microesferas" : [
+          "40º 40% microesferas" : [
           { "strain" : 0.0, "stress" : 	58.4 },
           { "strain" : 0.9, "stress" : 	117.0 },
           { "strain" : 2.0, "stress" : 	223.0 },
@@ -1330,7 +1330,7 @@ function getDataBruto(req, res) {
           { "strain" : 20.8, "stress" : 	446.0 },
           { "strain" : 20.9, "stress" : 	446.0 }
           ],
-          "Reograma 40º 30% microesferas" : [
+          "40º 30% microesferas" : [
             { "strain" : 0.0, "stress" : 	48.8 },
             { "strain" : 1.0, "stress" : 	133.0 },
             { "strain" : 2.0, "stress" : 	201.0 },
@@ -1382,7 +1382,7 @@ function getDataBruto(req, res) {
             { "strain" : 28.0, "stress" : 	446.0 },
             { "strain" : 28.4, "stress" : 	446.0 }
         ],
-        "Reograma 40º 20% microesferas" : [
+        "40º 20% microesferas" : [
           { "strain" : 0.0, "stress" : 	43.8 },
           { "strain" : 0.9, "stress" : 	83.8 },
           { "strain" : 2.0, "stress" : 	169.0 },
@@ -1434,7 +1434,7 @@ function getDataBruto(req, res) {
           { "strain" : 48.9, "stress" : 	430.0 },
           { "strain" : 50.0, "stress" : 	434.0 }
         ],
-        "Reograma 40º manjar" : [
+        "40º manjar" : [
           { "strain" : 0.0, "stress" : 	36.5 },
           { "strain" : 0.9, "stress" : 	61.4 },
           { "strain" : 2.0, "stress" : 	143.0 },
@@ -1486,7 +1486,7 @@ function getDataBruto(req, res) {
           { "strain" : 49.0, "stress" : 	394.0 },
           { "strain" : 50.0, "stress" : 	396.0 }
         ],
-        "Reograma 30º 40% microesferas" : [
+        "30º 40% microesferas" : [
           { "strain" : 0.0, "stress" : 	119.0 },
           { "strain" : 0.9, "stress" : 	190.0 },
           { "strain" : 2.0, "stress" : 	344.0 },
@@ -1538,7 +1538,7 @@ function getDataBruto(req, res) {
           { "strain" : 5.5, "stress" : 	446.0 },
           { "strain" : 5.5, "stress" : 	446.0 }
         ],
-        "Reograma 30º 30% microesferas" : [
+        "30º 30% microesferas" : [
           { "strain" : 0.00, "stress" : 	80.54 },
           { "strain" : 0.90, "stress" : 	105.00 },
           { "strain" : 2.03, "stress" : 	247.00 },
@@ -1590,7 +1590,7 @@ function getDataBruto(req, res) {
           { "strain" : 12.90, "stress" : 	446.00 },
           { "strain" : 13.00, "stress" : 	446.00 }
         ],
-        "Reograma 30º 20% microesferas" : [
+        "30º 20% microesferas" : [
           { "strain" : 0.0, "stress" : 	71.8 },
           { "strain" : 0.9, "stress" : 	116.0 },
           { "strain" : 2.0, "stress" : 	236.0 },
@@ -1642,7 +1642,7 @@ function getDataBruto(req, res) {
           { "strain" : 18.6, "stress" : 	446.0 },
           { "strain" : 18.8, "stress" : 	446.0 }
         ],
-        "Reograma 35º manjar" : [
+        "35º manjar" : [
           { "strain" : 0.0, "stress" : 	53.3 },
           { "strain" : 0.9, "stress" : 	86.5 },
           { "strain" : 2.0, "stress" : 	191.0 },
