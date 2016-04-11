@@ -21,6 +21,9 @@
                 <li>
                     <a href="#bruto" id="brutos">Bruto</a>
                 </li>
+                <li>
+                    <a href="#bostwick" id="bostwick">Bostwick</a>
+                </li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -76,7 +79,13 @@
         InitLineChart(data);
       })
     })
-
+    $("#bostwick").click(function(e) {
+      $("#visualisation").empty();
+      $.get("graficos/data/bostwick", function (data) {
+        console.log(data);
+        InitLineChart(data);
+      })
+    })
 
 
     $("#menu-toggle").click(function(e) {

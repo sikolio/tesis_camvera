@@ -7,6 +7,7 @@ router.get('/tests', getTest);
 router.get('/data/line', getDataLine);
 router.get('/data/points', getDataPoints);
 router.get('/data/bruto', getDataBruto);
+router.get('/data/bostwick', getDataBostwick);
 
 module.exports = router;
 
@@ -1901,5 +1902,168 @@ function getDataBruto(req, res) {
           { "strain" : 44.7, "stress" : 	446.0 }
         ]
     }
+)
+}
+function getDataBostwick(req, res) {
+  res.json({
+    "su1 50° 20%microesferas" : [
+        { "stress": 20118.4055, "strain": 1.42857143 },
+        { "stress": 18009.5575, "strain": 0.89285714 },
+        { "stress": 13996.2497, "strain": 0.30612245 },
+        { "stress": 12783.8404, "strain": 0.20833333 },
+        { "stress": 11426.363, "strain": 0.12931034 },
+        { "stress": 9011.66481, "strain": 0.04714016 },
+        { "stress": 7052.14745, "strain": 0.0166113 },
+        { "stress": 4772.63277, "strain": 0.00314782 }
+    ],
+    "su2 50° 20%microesferas" : [
+        { "stress": 6140.43742, "strain": 2.67857143 },
+        { "stress": 5300.30121, "strain": 1.44230769 },
+        { "stress": 4490.51214, "strain": 0.71770335 },
+        { "stress": 3668.2291, "strain": 0.30612245 },
+        { "stress": 3325.44509, "strain": 0.20242915 },
+        { "stress": 2880.13208, "strain": 0.11037528 },
+        { "stress": 2435.2806, "strain": 0.05434783 },
+        { "stress": 1919.02141, "strain": 0.01984127 },
+        { "stress": 1255.66818, "strain": 0.00327988 }
+    ],
+    "su3 50° 20%microesferas" : [
+        { "stress": 2620.06576, "strain": 1.8115942 },
+        { "stress": 2578.82861, "strain": 1.70454545 },
+        { "stress": 1978.5591, "strain": 0.61576355 },
+        { "stress": 1681.12223, "strain": 0.32894737 },
+        { "stress": 1426.65152, "strain": 0.17474371 },
+        { "stress": 1167.42251, "strain": 0.08055854 },
+        { "stress": 991.907444, "strain": 0.04288165 },
+        { "stress": 776.441459, "strain": 0.01657092 },
+        { "stress": 516.106016, "strain": 0.00335871 },
+        { "stress": 420.738452, "strain": 0.0015015 }
+    ],
+    "su1 40° 20%microesferas" : [
+        { "stress": 16263.7128, "strain": 0.53571429 },
+        { "stress": 14764.2307, "strain": 0.35714286 },
+        { "stress": 12784.8729, "strain": 0.1953125 },
+        { "stress": 11044.0571, "strain": 0.10570825 },
+        { "stress": 9696.18506, "strain": 0.06122449 },
+        { "stress": 7975.03943, "strain": 0.02695515 },
+        { "stress": 6792.37132, "strain": 0.01373375 },
+        { "stress": 5447.8241, "strain": 0.00543242 },
+        { "stress": 4809.16582, "strain": 0.00321429}
+    ],
+    "su2 40° 20%microesferas" : [
+        { "stress": 4902.16199, "strain": 0.9057971 },
+        { "stress": 4698.00629, "strain": 0.74441687 },
+        { "stress": 3796.18241, "strain": 0.27829314 },
+        { "stress": 3299.87337, "strain": 0.14563107 },
+        { "stress": 2803.12754, "strain": 0.06844627 },
+        { "stress": 2423.63261, "strain": 0.03487723 },
+        { "stress": 1995.74316, "strain": 0.01415068 },
+        { "stress": 1560.92905, "strain": 0.0045045 },
+        { "stress": 1581.89191, "strain": 0.00479386 }
+    ],
+    "su3 40° 20%microesferas" : [
+        { "stress": 2306.81203, "strain": 0.73529412 },
+        { "stress": 1956.66739, "strain": 0.33244681 },
+        { "stress": 1679.04406, "strain": 0.15873016 },
+        { "stress": 1394.00334, "strain": 0.06446622 },
+        { "stress": 1160.09859, "strain": 0.02640845 },
+        { "stress": 997.583588, "strain": 0.01265182 },
+        { "stress": 789.965455, "strain": 0.00403296 },
+        { "stress": 666.932027, "strain": 0.00175046 }
+    ],
+    "su2 65° manjar" : [
+        { "stress": 7987.6708, "strain": 5.769230769 },
+        { "stress": 7198.060488, "strain": 4.166666667 },
+        { "stress": 6959.547929, "strain": 3.75 },
+        { "stress": 5477.193237, "strain": 1.773049645 },
+        { "stress": 4006.656704, "strain": 0.666666667 },
+        { "stress": 3470.383908, "strain": 0.425170068 },
+        { "stress": 2990.247365, "strain": 0.266714083 },
+        { "stress": 2558.21213, "strain": 0.163576881 },
+        { "stress": 2172.777828, "strain": 0.098039216 },
+        { "stress": 1542.695202, "strain": 0.033467202 },
+        { "stress": 816.7203014, "strain": 0.004518072 },
+        { "stress": 917.4584115, "strain": 0.006521739 }
+    ],
+    "su3 65° manjar" : [
+        { "stress": 3733.019221, "strain": 8.928571429 },
+        { "stress": 3188.303708, "strain": 4.6875 },
+        { "stress": 2520.738878, "strain": 1.794258373 },
+        { "stress": 2156.112839, "strain": 0.946969697 },
+        { "stress": 1951.926673, "strain": 0.630252101 },
+        { "stress": 1678.427492, "strain": 0.339673913 },
+        { "stress": 1460.866283, "strain": 0.192307692 },
+        { "stress": 1203.361109, "strain": 0.086805556 },
+        { "stress": 903.9345649, "strain": 0.026785714 },
+        { "stress": 681.4615799, "strain": 0.008361204 }
+    ],
+    "su3 40° manjar" : [
+        { "stress": 2266.678705, "strain": 0.744047619 },
+        { "stress": 1948.320266, "strain": 0.296442688 },
+        { "stress": 1560.083476, "strain": 0.076437016 },
+        { "stress": 1292.362796, "strain": 0.024131274 },
+        { "stress": 1020.290616, "strain": 0.005630631 },
+        { "stress": 764.4906017, "strain": 0.00093836 }
+    ],
+    "su2 40° manjar" : [
+        { "stress": 4473.580724, "strain": 0.946969697 },
+        { "stress": 3486.616753, "strain": 0.208333333 },
+        { "stress": 3054.118932, "strain": 0.093052109 },
+        { "stress": 2440.098397, "strain": 0.023674242 },
+        { "stress": 2146.320849, "strain": 0.010806916 },
+        { "stress": 1674.736289, "strain": 0.00236016 }
+    ],
+    "su1 40° manjar" : [
+        { "stress": 15270.48826, "strain": 0.355392157 },
+        { "stress": 13634.28634, "strain": 0.196476965 },
+        { "stress": 10723.33938, "strain": 0.055876686 },
+        { "stress": 8818.86179, "strain": 0.020038695 },
+        { "stress": 6596.59176, "strain": 0.004354354 },
+        { "stress": 5581.08814, "strain": 0.001803483 }
+    ],
+    "su3 50° manjar" : [
+        { "stress": 2044.295012, "strain": 0.70116054 },
+        { "stress": 2007.12198, "strain": 0.65909091 },
+        { "stress": 1249.488186, "strain": 0.13229927 },
+        { "stress": 952.2972091, "strain": 0.05225225 },
+        { "stress": 673.3092895, "strain": 0.01574889 },
+        { "stress": 435.6026049, "strain": 0.00338153 }
+    ],
+    "su2 50° manjar" : [
+        { "stress": 4496.931666, "strain": 0.739795918 },
+        { "stress": 3831.314627, "strain": 0.413105413 },
+        { "stress": 2948.306782, "strain": 0.158991228 },
+        { "stress": 2292.521615, "strain": 0.063374126 },
+        { "stress": 1668.458897, "strain": 0.019727891 },
+        { "stress": 1101.525675, "strain": 0.004239766 },
+        { "stress": 1824.141171, "strain": 0.027395412 }
+    ],
+    "su1 65° 20%azúcar" : [
+        { "stress": 1603.900182, "strain": 2.013888889 },
+        { "stress": 1458.593456, "strain": 1.318181818 },
+        { "stress": 1225.108838, "strain": 0.604166667 },
+        { "stress": 1079.665422, "strain": 0.342789598 },
+        { "stress": 854.9313911, "strain": 0.119874339 },
+        { "stress": 768.3690761, "strain": 0.073979592 },
+        { "stress": 647.7407948, "strain": 0.034069549 },
+        { "stress": 588.727174, "strain": 0.022036474 },
+        { "stress": 436.7411149, "strain": 0.005581216 },
+        { "stress": 313.2226126, "strain": 0.001178574 }
+    ],
+    "su3 65° 20%azúcar" : [
+        { "stress": 3777.44601, "strain": 5.37037037 },
+        { "stress": 2506.37261, "strain": 1.56926407 },
+        { "stress": 2141.33297, "strain": 0.97840756 },
+        { "stress": 1630.52143, "strain": 0.43154762 },
+        { "stress": 1527.02861, "strain": 0.35434995 },
+        { "stress": 1248.40852, "strain": 0.19333333 },
+        { "stress": 1176.76479, "strain": 0.16183036 },
+        { "stress": 953.233327, "strain": 0.08579882 },
+        { "stress": 881.992211, "strain": 0.0678839 },
+        { "stress": 660.044773, "strain": 0.02828716 },
+        { "stress": 601.071078, "strain": 0.02131099 },
+        { "stress": 449.907424, "strain": 0.00885226 }
+    ]
+}
 )
 }
