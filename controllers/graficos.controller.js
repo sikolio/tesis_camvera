@@ -21,28 +21,28 @@ function getGrafico(req, res) {
 }
 
 function getDataPoints(req, res) {
-  res.json({"Puntos": [{"Nombre" :"60º 40% microesferas de vidrio", "Esfuerzo_de_fluencia" : 10.49548119, "Consistencia" : 36.395, "Indice_de_flujo" : 0.527724007 },
-  {"Nombre" :"60º 30% microesferas de vidrio", "Esfuerzo_de_fluencia" : 18.71787689, "Consistencia" : 49.521, "Indice_de_flujo" : 0.467246325 },
-  {"Nombre" :"60º 20% microesferas de vidrio", "Esfuerzo_de_fluencia" : 15.23809168, "Consistencia" : 29.535, "Indice_de_flujo" : 0.491927725 },
+  res.json({"Puntos": [{"Nombre" :"60º 40%  microesferas de vidrio", "Esfuerzo_de_fluencia" : 10.49548119, "Consistencia" : 36.395, "Indice_de_flujo" : 0.527724007 },
+  {"Nombre" :"60º 30%  microesferas de vidrio", "Esfuerzo_de_fluencia" : 18.71787689, "Consistencia" : 49.521, "Indice_de_flujo" : 0.467246325 },
+  {"Nombre" :"60º 20%  microesferas de vidrio", "Esfuerzo_de_fluencia" : 15.23809168, "Consistencia" : 29.535, "Indice_de_flujo" : 0.491927725 },
   {"Nombre" :"60º manjar", "Esfuerzo_de_fluencia" : 23.769178, "Consistencia" : 32.415, "Indice_de_flujo" : 0.432366386 },
-  {"Nombre" :"50º 40% microesferas de vidrio", "Esfuerzo_de_fluencia" : 28.90466746, "Consistencia" : 94.223, "Indice_de_flujo" : 0.399189175 },
-  {"Nombre" :"50º 30% microesferas de vidrio", "Esfuerzo_de_fluencia" : 27.38927712, "Consistencia" : 102.149, "Indice_de_flujo" : 0.366672641 },
-  {"Nombre" :"50º 20% microesferas de vidrio", "Esfuerzo_de_fluencia" : 23.60080129, "Consistencia" : 65.342, "Indice_de_flujo" : 0.41611762 },
+  {"Nombre" :"50º 40%  microesferas de vidrio", "Esfuerzo_de_fluencia" : 28.90466746, "Consistencia" : 94.223, "Indice_de_flujo" : 0.399189175 },
+  {"Nombre" :"50º 30%  microesferas de vidrio", "Esfuerzo_de_fluencia" : 27.38927712, "Consistencia" : 102.149, "Indice_de_flujo" : 0.366672641 },
+  {"Nombre" :"50º 20%  microesferas de vidrio", "Esfuerzo_de_fluencia" : 23.60080129, "Consistencia" : 65.342, "Indice_de_flujo" : 0.41611762 },
   {"Nombre" :"50º manjar", "Esfuerzo_de_fluencia" : 31.71094585, "Consistencia" : 51.167, "Indice_de_flujo" : 0.352611523 },
-  {"Nombre" :"40º 40% microesferas de vidrio", "Esfuerzo_de_fluencia" : 58.37059059, "Consistencia" : 106.405, "Indice_de_flujo" : 0.468607218 },
-  {"Nombre" :"40º 30% microesferas de vidrio", "Esfuerzo_de_fluencia" : 48.82924405, "Consistencia" : 120.126, "Indice_de_flujo" : 0.394254414 },
-  {"Nombre" :"40º 20% microesferas de vidrio", "Esfuerzo_de_fluencia" : 43.77794294, "Consistencia" : 113.570, "Indice_de_flujo" : 0.321152981 },
+  {"Nombre" :"40º 40%  microesferas de vidrio", "Esfuerzo_de_fluencia" : 58.37059059, "Consistencia" : 106.405, "Indice_de_flujo" : 0.468607218 },
+  {"Nombre" :"40º 30%  microesferas de vidrio", "Esfuerzo_de_fluencia" : 48.82924405, "Consistencia" : 120.126, "Indice_de_flujo" : 0.394254414 },
+  {"Nombre" :"40º 20%  microesferas de vidrio", "Esfuerzo_de_fluencia" : 43.77794294, "Consistencia" : 113.570, "Indice_de_flujo" : 0.321152981 },
   {"Nombre" :"40º manjar", "Esfuerzo_de_fluencia" : 36.48161912, "Consistencia" : 95.157, "Indice_de_flujo" : 0.34590385 },
-  {"Nombre" :"30º 40% microesferas de vidrio", "Esfuerzo_de_fluencia" : 118.9862039, "Consistencia" : 115.312, "Indice_de_flujo" : 0.739626403 },
-  {"Nombre" :"30º 30% microesferas de vidrio", "Esfuerzo_de_fluencia" : 80.5401899, "Consistencia" : 102.014, "Indice_de_flujo" : 0.559422724 },
-  {"Nombre" :"30º 20% microesferas de vidrio", "Esfuerzo_de_fluencia" : 71.84072688, "Consistencia" : 108.772, "Indice_de_flujo" : 0.476028538 },
+  {"Nombre" :"30º 40%  microesferas de vidrio", "Esfuerzo_de_fluencia" : 118.9862039, "Consistencia" : 115.312, "Indice_de_flujo" : 0.739626403 },
+  {"Nombre" :"30º 30%  microesferas de vidrio", "Esfuerzo_de_fluencia" : 80.5401899, "Consistencia" : 102.014, "Indice_de_flujo" : 0.559422724 },
+  {"Nombre" :"30º 20%  microesferas de vidrio", "Esfuerzo_de_fluencia" : 71.84072688, "Consistencia" : 108.772, "Indice_de_flujo" : 0.476028538 },
   {"Nombre" :"35º manjar", "Esfuerzo_de_fluencia" : 53.31928948, "Consistencia" : 129.950, "Indice_de_flujo" : 0.302541829 }]
 });
 }
 
 function getDataLine(req, res) {
   res.json({
-    "60º 40% REVISION": [
+    "60º 40%  REVISION": [
     { "strain" : 0.937, "stress" : 	94 },
     { "strain" : 2.04, "stress" : 	125 },
     { "strain" : 3.06, "stress" : 	146 },
@@ -93,7 +93,7 @@ function getDataLine(req, res) {
     { "strain" : 49, "stress" : 	442 },
     { "strain" : 50, "stress" : 	446 },
 ],
-      "60º 30% REVISION": [
+      "60º 30%  REVISION": [
       { "strain" : 0.931, "stress" : 	48 },
       { "strain" : 2.04, "stress" : 	85 },
       { "strain" : 3.06, "stress" : 	100 },
@@ -144,7 +144,7 @@ function getDataLine(req, res) {
       { "strain" : 49, "stress" : 	287 },
       { "strain" : 50, "stress" : 	288 }
   ],
-      "60º 40% microesferas de vidrio": [
+      "60º 40%  microesferas de vidrio": [
         { "strain" : 0.953, "stress" : 	45.97780379 },
         { "strain" : 2.04, "stress" : 	63.51606323 },
         { "strain" : 3.06, "stress" : 	76.16624624 },
@@ -195,7 +195,7 @@ function getDataLine(req, res) {
         { "strain" : 49, "stress" : 	294.2888649 },
         { "strain" : 50, "stress" : 	297.3307012 }
       ],
-      "60º 30% microesferas de vidrio": [
+      "60º 30%  microesferas de vidrio": [
         { "strain" : 0.985, "stress" : 	67.89062088 },
         { "strain" : 2.04, "stress" : 	87.8157849 },
         { "strain" : 3.06, "stress" : 	102.2287247 },
@@ -246,7 +246,7 @@ function getDataLine(req, res) {
         { "strain" : 49, "stress" : 	323.8790307 },
         { "strain" : 50, "stress" : 	326.7732812 }
       ],
-        "60º 20% microesferas": [
+        "60º 20%  microesferas": [
           { "strain" : 0.947, "stress" : 	43.99250696 },
           { "strain" : 2.04, "stress" : 	57.18059093 },
           { "strain" : 3.06, "stress" : 	66.43909577 },
@@ -348,7 +348,7 @@ function getDataLine(req, res) {
             { "strain" : 49, "stress" : 	198.1626628 },
             { "strain" : 50, "stress" : 	199.6926574 }
           ],
-          "50º 40% microesferas" : [
+          "50º 40%  microesferas" : [
             { "strain" : 0.939, "stress" : 	120.7898258 },
             { "strain" : 2.03, "stress" : 	153.903529 },
             { "strain" : 3.06, "stress" : 	176.1534469 },
@@ -399,7 +399,7 @@ function getDataLine(req, res) {
             { "strain" : 44.8, "stress" : 	458.766887 },
             { "strain" : 45.4, "stress" : 	461.0558716 }
           ],
-          "50º 30% microesferas" : [
+          "50º 30%  microesferas" : [
             { "strain" : 1.0, "stress" : 	129.0 },
             { "strain" : 2.0, "stress" : 	160.1 },
             { "strain" : 3.1, "stress" : 	181.3 },
@@ -450,7 +450,7 @@ function getDataLine(req, res) {
             { "strain" : 49.0, "stress" : 	453.0 },
             { "strain" : 49.8, "stress" : 	455.5 }
           ],
-          "50º 20% microesferas" : [
+          "50º 20%  microesferas" : [
             { "strain" : 0.92, "stress" : 	86.7148119 },
             { "strain" : 2.04, "stress" : 	111.5105158 },
             { "strain" : 3.06, "stress" : 	127.6674444 },
@@ -552,7 +552,7 @@ function getDataLine(req, res) {
             { "strain" : 49, "stress" : 	233.5328688 },
             { "strain" : 50, "stress" : 	234.9757223 }
           ],
-          "40º 40% microesferas" : [
+          "40º 40%  microesferas" : [
             { "strain" : 0.898, "stress" : 	205.1951902 },
             { "strain" : 2.04, "stress" : 	248.7162855 },
             { "strain" : 3.06, "stress" : 	275.0998667 },
@@ -603,7 +603,7 @@ function getDataLine(req, res) {
             { "strain" : 20.8, "stress" : 	462.6966232 },
             { "strain" : 20.9, "stress" : 	463.3346398 }
           ],
-          "40º 30% microesferas" : [
+          "40º 30%  microesferas" : [
             { "strain" : 0.981, "stress" : 	187.6902547 },
             { "strain" : 2.04, "stress" : 	225.2044713 },
             { "strain" : 3.06, "stress" : 	250.1808817 },
@@ -654,7 +654,7 @@ function getDataLine(req, res) {
             { "strain" : 28, "stress" : 	463.777626 },
             { "strain" : 28.4, "stress" : 	465.7046251 }
         ],
-        "40º 20% microesferas" : [
+        "40º 20%  microesferas" : [
           { "strain" : 0.902, "stress" : 	153.6476766 },
           { "strain" : 2.04, "stress" : 	186.5694171 },
           { "strain" : 3.06, "stress" : 	206.4281086 },
@@ -756,7 +756,7 @@ function getDataLine(req, res) {
           { "strain" : 49, "stress" : 	402.1477881 },
           { "strain" : 50, "stress" : 	404.7120838 }
         ],
-        "30º 40% microesferas" : [
+        "30º 40%  microesferas" : [
           { "strain" : 0.892, "stress" : 	316.5000367 },
           { "strain" : 2.04, "stress" : 	371.0755565 },
           { "strain" : 3.06, "stress" : 	403.0975272 },
@@ -807,7 +807,7 @@ function getDataLine(req, res) {
           { "strain" : 5.48, "stress" : 	456.3686441 },
           { "strain" : 5.48, "stress" : 	456.3686441 }
         ],
-        "30º 30% microesferas" : [
+        "30º 30%  microesferas" : [
           { "strain" : 0.904, "stress" : 	222.1131318 },
           { "strain" : 2.03, "stress" : 	271.4999119 },
           { "strain" : 3.06, "stress" : 	302.8046895 },
@@ -858,7 +858,7 @@ function getDataLine(req, res) {
           { "strain" : 12.9, "stress" : 	458.9989364 },
           { "strain" : 13, "stress" : 	460.081551 }
         ],
-        "30º 20% microesferas" : [
+        "30º 20%  microesferas" : [
           { "strain" : 0.887, "stress" : 	213.1586201 },
           { "strain" : 2.04, "stress" : 	258.2859571 },
           { "strain" : 3.06, "stress" : 	285.2158711 },
@@ -965,7 +965,7 @@ function getDataLine(req, res) {
 }
 function getDataBruto(req, res) {
   res.json({
-    "60º 40% REVISION": [
+    "60º 40%  REVISION": [
     { "strain" : 0.00, "stress" : 	12.91 },
     { "strain" : 0.94, "stress" : 	59.90 },
     { "strain" : 2.04, "stress" : 	115.00 },
@@ -1017,7 +1017,7 @@ function getDataBruto(req, res) {
     { "strain" : 49.00, "stress" : 	436.00 },
     { "strain" : 50.00, "stress" : 	437.00 },
   ],
-    "60º 30% REVISION": [
+    "60º 30%  REVISION": [
       { "strain" : 0, "stress" : 	18.4 },
       { "strain" : 0.931, "stress" : 	71.1 },
       { "strain" : 2.04, "stress" : 	91.4 },
@@ -1069,7 +1069,7 @@ function getDataBruto(req, res) {
       { "strain" : 49, "stress" : 	292.1 },
       { "strain" : 50, "stress" : 	294.4 }
 ],
-      "60º 40% microesferas de vidrio": [
+      "60º 40%  microesferas de vidrio": [
         { "strain" : 0.0, "stress" : 	10.5 },
         { "strain" : 1.0, "stress" : 	32.5 },
         { "strain" : 2.0, "stress" : 	59.3 },
@@ -1121,7 +1121,7 @@ function getDataBruto(req, res) {
         { "strain" : 49.0, "stress" : 	291.0 },
         { "strain" : 50.0, "stress" : 	294.0 }
       ],
-      "60º 30% microesferas de vidrio": [
+      "60º 30%  microesferas de vidrio": [
         { "strain" : 0.0, "stress" : 	18.7 },
         { "strain" : 1.0, "stress" : 	51.7 },
         { "strain" : 2.0, "stress" : 	80.5 },
@@ -1173,7 +1173,7 @@ function getDataBruto(req, res) {
         { "strain" : 49.0, "stress" : 	320.0 },
         { "strain" : 50.0, "stress" : 	323.0 }
       ],
-        "60º 20% microesferas": [
+        "60º 20%  microesferas": [
           { "strain" : 0.0, "stress" : 	15.2 },
           { "strain" : 0.9, "stress" : 	33.5 },
           { "strain" : 2.0, "stress" : 	57.4 },
@@ -1277,7 +1277,7 @@ function getDataBruto(req, res) {
             { "strain" : 49.0, "stress" : 	196.0 },
             { "strain" : 50.0, "stress" : 	197.0 }
           ],
-          "50º 40% microesferas" : [
+          "50º 40%  microesferas" : [
             { "strain" : 0.0, "stress" : 	28.9 },
             { "strain" : 0.9, "stress" : 	65.5 },
             { "strain" : 2.0, "stress" : 	127.0 },
@@ -1329,7 +1329,7 @@ function getDataBruto(req, res) {
             { "strain" : 44.8, "stress" : 	446.0 },
             { "strain" : 45.4, "stress" : 	446.0 }
           ],
-          "50º 30% microesferas" : [
+          "50º 30%  microesferas" : [
             { "strain" : 0.0, "stress" : 	27.4 },
             { "strain" : 1.0, "stress" : 	94.1 },
             { "strain" : 2.0, "stress" : 	145.0 },
@@ -1381,7 +1381,7 @@ function getDataBruto(req, res) {
             { "strain" : 49.0, "stress" : 	445.0 },
             { "strain" : 49.8, "stress" : 	446.0 }
           ],
-          "50º 20% microesferas" : [
+          "50º 20%  microesferas" : [
             { "strain" : 0.0, "stress" : 	23.6 },
             { "strain" : 0.9, "stress" : 	46.3 },
             { "strain" : 2.0, "stress" : 	94.9 },
@@ -1485,7 +1485,7 @@ function getDataBruto(req, res) {
             { "strain" : 49.0, "stress" : 	228.0 },
             { "strain" : 50.0, "stress" : 	232.0 }
           ],
-          "40º 40% microesferas" : [
+          "40º 40%  microesferas" : [
           { "strain" : 0.0, "stress" : 	58.4 },
           { "strain" : 0.9, "stress" : 	117.0 },
           { "strain" : 2.0, "stress" : 	223.0 },
@@ -1537,7 +1537,7 @@ function getDataBruto(req, res) {
           { "strain" : 20.8, "stress" : 	446.0 },
           { "strain" : 20.9, "stress" : 	446.0 }
           ],
-          "40º 30% microesferas" : [
+          "40º 30%  microesferas" : [
             { "strain" : 0.0, "stress" : 	48.8 },
             { "strain" : 1.0, "stress" : 	133.0 },
             { "strain" : 2.0, "stress" : 	201.0 },
@@ -1589,7 +1589,7 @@ function getDataBruto(req, res) {
             { "strain" : 28.0, "stress" : 	446.0 },
             { "strain" : 28.4, "stress" : 	446.0 }
         ],
-        "40º 20% microesferas" : [
+        "40º 20%  microesferas" : [
           { "strain" : 0.0, "stress" : 	43.8 },
           { "strain" : 0.9, "stress" : 	83.8 },
           { "strain" : 2.0, "stress" : 	169.0 },
@@ -1693,7 +1693,7 @@ function getDataBruto(req, res) {
           { "strain" : 49.0, "stress" : 	394.0 },
           { "strain" : 50.0, "stress" : 	396.0 }
         ],
-        "30º 40% microesferas" : [
+        "30º 40%  microesferas" : [
           { "strain" : 0.0, "stress" : 	119.0 },
           { "strain" : 0.9, "stress" : 	190.0 },
           { "strain" : 2.0, "stress" : 	344.0 },
@@ -1745,7 +1745,7 @@ function getDataBruto(req, res) {
           { "strain" : 5.5, "stress" : 	446.0 },
           { "strain" : 5.5, "stress" : 	446.0 }
         ],
-        "30º 30% microesferas" : [
+        "30º 30%  microesferas" : [
           { "strain" : 0.00, "stress" : 	80.54 },
           { "strain" : 0.90, "stress" : 	105.00 },
           { "strain" : 2.03, "stress" : 	247.00 },
@@ -1797,7 +1797,7 @@ function getDataBruto(req, res) {
           { "strain" : 12.90, "stress" : 	446.00 },
           { "strain" : 13.00, "stress" : 	446.00 }
         ],
-        "30º 20% microesferas" : [
+        "30º 20%  microesferas" : [
           { "strain" : 0.0, "stress" : 	71.8 },
           { "strain" : 0.9, "stress" : 	116.0 },
           { "strain" : 2.0, "stress" : 	236.0 },
@@ -1906,7 +1906,7 @@ function getDataBruto(req, res) {
 }
 function getDataBostwick(req, res) {
   res.json({
-    "su1 50° 20%microesferas" : [
+    "su1 50° 20% microesferas" : [
         { "stress": 20118.4055, "strain": 1.42857143 },
         { "stress": 18009.5575, "strain": 0.89285714 },
         { "stress": 13996.2497, "strain": 0.30612245 },
@@ -1916,7 +1916,7 @@ function getDataBostwick(req, res) {
         { "stress": 7052.14745, "strain": 0.0166113 },
         { "stress": 4772.63277, "strain": 0.00314782 }
     ],
-    "su2 50° 20%microesferas" : [
+    "su2 50° 20% microesferas" : [
         { "stress": 6140.43742, "strain": 2.67857143 },
         { "stress": 5300.30121, "strain": 1.44230769 },
         { "stress": 4490.51214, "strain": 0.71770335 },
@@ -1927,7 +1927,7 @@ function getDataBostwick(req, res) {
         { "stress": 1919.02141, "strain": 0.01984127 },
         { "stress": 1255.66818, "strain": 0.00327988 }
     ],
-    "su3 50° 20%microesferas" : [
+    "su3 50° 20% microesferas" : [
         { "stress": 2620.06576, "strain": 1.8115942 },
         { "stress": 2578.82861, "strain": 1.70454545 },
         { "stress": 1978.5591, "strain": 0.61576355 },
@@ -1939,7 +1939,7 @@ function getDataBostwick(req, res) {
         { "stress": 516.106016, "strain": 0.00335871 },
         { "stress": 420.738452, "strain": 0.0015015 }
     ],
-    "su1 40° 20%microesferas" : [
+    "su1 40° 20% microesferas" : [
         { "stress": 16263.7128, "strain": 0.53571429 },
         { "stress": 14764.2307, "strain": 0.35714286 },
         { "stress": 12784.8729, "strain": 0.1953125 },
@@ -1950,7 +1950,7 @@ function getDataBostwick(req, res) {
         { "stress": 5447.8241, "strain": 0.00543242 },
         { "stress": 4809.16582, "strain": 0.00321429}
     ],
-    "su2 40° 20%microesferas" : [
+    "su2 40° 20% microesferas" : [
         { "stress": 4902.16199, "strain": 0.9057971 },
         { "stress": 4698.00629, "strain": 0.74441687 },
         { "stress": 3796.18241, "strain": 0.27829314 },
@@ -1961,7 +1961,7 @@ function getDataBostwick(req, res) {
         { "stress": 1560.92905, "strain": 0.0045045 },
         { "stress": 1581.89191, "strain": 0.00479386 }
     ],
-    "su3 40° 20%microesferas" : [
+    "su3 40° 20% microesferas" : [
         { "stress": 2306.81203, "strain": 0.73529412 },
         { "stress": 1956.66739, "strain": 0.33244681 },
         { "stress": 1679.04406, "strain": 0.15873016 },
@@ -2038,7 +2038,7 @@ function getDataBostwick(req, res) {
         { "stress": 1101.525675, "strain": 0.004239766 },
         { "stress": 1824.141171, "strain": 0.027395412 }
     ],
-    "su1 65° 20%azúcar" : [
+    "su1 65° 20% azúcar" : [
         { "stress": 1603.900182, "strain": 2.013888889 },
         { "stress": 1458.593456, "strain": 1.318181818 },
         { "stress": 1225.108838, "strain": 0.604166667 },
@@ -2050,7 +2050,7 @@ function getDataBostwick(req, res) {
         { "stress": 436.7411149, "strain": 0.005581216 },
         { "stress": 313.2226126, "strain": 0.001178574 }
     ],
-    "su3 65° 20%azúcar" : [
+    "su3 65° 20% azúcar" : [
         { "stress": 3777.44601, "strain": 5.37037037 },
         { "stress": 2506.37261, "strain": 1.56926407 },
         { "stress": 2141.33297, "strain": 0.97840756 },

@@ -6,21 +6,26 @@ function InitLineChart(data) {
   var maxstress = -1000000;
   for (var key in data) {
     var d = data[key];
-    if (d[0].strain < minstrain) {
-      minstrain = d[0].strain;
-    }
-    if (d[0].stress < minstress) {
-      minstress = d[0].stress;
-    }
-    if (d[d.length-1].strain > maxstrain) {
-      maxstrain = d[d.length-1].strain;
-    }
-    if (d[d.length-1].stress > maxstress) {
-      maxstress = d[d.length-1].stress;
+    for (var i=0; i<d.length; i++){
+      if (d[i].strain < minstrain) {
+        minstrain = d[i].strain;
+      }
+      if (d[i].stress < minstress) {
+        minstress = d[i].stress;
+      }
+      if (d[i].strain > maxstrain) {
+        maxstrain = d[i].strain;
+      }
+      if (d[i].stress > maxstress) {
+        maxstress = d[i].stress;
+      }
     }
   }
-  maxstress = Math.ceil(maxstress);
-  maxstrain = Math.ceil(maxstrain);
+  if (maxstrain < minstrain){
+    var temp = minstrain;
+    minstrain = maxstrain;
+    maxstrain = temp;
+  }
 
 
   var color = d3.scale.category20(),
@@ -73,9 +78,10 @@ function InitLineChart(data) {
 
   var index = 0;
   for (var key in data){
-    var arr = /((\w*)º ((\w+)% )?(\w+( \w+ \w+)?))/.exec(key);
-    var newkey = arr[2] + arr[4] + arr[5]
-    ACTIVE[newkey.replace(/\s+/g, '')] = true;
+    var arr = /((\w*)[º°] ((\w+)% )?(\w+( \w+ \w+)?))/.exec(key);
+    var newkey = key.replace(/\s+/g, '');
+    newkey = newkey.replace(/[º°%]/g, ''); 
+    ACTIVE[newkey] = true;
     vis.append('svg:path')
       .attr('d', lineGen(data[key]))
       .attr('stroke', function(){
@@ -84,11 +90,11 @@ function InitLineChart(data) {
       .attr("class", "line")
       .attr("stroke-width", 4)
       .attr("fill", "none")
-      .attr("id", 'tag'+newkey.replace(/\s+/g, ''));
+      .attr("id", 'tag'+newkey);
     vis.append('svg:text')
       .text(key)
       .style("fill", color(index))
-      .attr("id", newkey.replace(/\s+/g, ''))
+      .attr("id", newkey)
       .attr("x", 100 + (index%3)*300)
       .attr("y", 640 + (Math.floor(index/3))*30)
       .attr("class", "legend")
