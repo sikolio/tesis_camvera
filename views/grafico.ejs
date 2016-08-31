@@ -24,6 +24,9 @@
                 <li>
                     <a href="#bostwick" id="bostwick">Bostwick</a>
                 </li>
+                <li>
+                    <a href="#newdata" id="newdata">Datos Nuevos</a>
+                </li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -48,6 +51,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/graficos.js"></script>
+    <script src="js/new_graph.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>
@@ -63,6 +67,11 @@
         console.log(data);
         InitLineChart(data);
       })
+    });
+
+    $("#newdata").click(function(e) {
+      $("#visualisation").empty();
+      initChart()
     });
 
     $("#puntos").click(function(e) {

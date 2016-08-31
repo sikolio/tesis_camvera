@@ -13,5 +13,8 @@
     "body-parser": "latest",
     "rootpath": "latest",
     "request": "latest"
+  },
+  "standard": {
+    "globals": ["angular", "d3"]
   }
 }
