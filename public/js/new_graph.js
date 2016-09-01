@@ -65,6 +65,7 @@ function initChart () {
       .attr('stroke-width', 2)
       .attr('fill', 'none')
     $('#numi').val(i)
+    $('#range').val(i)
     i++
   }
 
