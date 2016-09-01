@@ -45,31 +45,73 @@ function initChart () {
     })
     .interpolate('basis')
 
-  var drawgraph = function (data) {
-    //for
-    var i = 0
-    function onedraw() {
-      var numeric_array = new Array()
-      for (var items in data[i]['linea']) {
-        numeric_array.push(data[i]['linea'][items])
-      }
-      if (i >= 5) {
-        vis.selectAll('.linea' + (i - 5)).remove()
-      }
-      vis.append('svg:path')
-        .attr('d', lineGen(numeric_array))
-        .attr('stroke', function () {
-          return color(i%20)
-        })
-        .attr('class', 'line')
-        .attr('class', 'linea' + i)
-        .attr('stroke-width', 2)
-        .attr('fill', 'none')
-      i++
+  var i = 0
+
+  function onedraw () {
+    var numeric_array = []
+    for (var items in data[i]['linea']) {
+      numeric_array.push(data[i]['linea'][items])
     }
-    window.setInterval(function(){
+    if (i >= 5) {
+      vis.selectAll('#linea' + (i - 5)).remove()
+    }
+    vis.append('svg:path')
+      .attr('d', lineGen(numeric_array))
+      .attr('stroke', function () {
+        return color(i%20)
+      })
+      .attr('class', 'line')
+      .attr('id', 'linea' + i)
+      .attr('stroke-width', 2)
+      .attr('fill', 'none')
+    $('#numi').val(i)
+    i++
+  }
+
+  var drawTimer = null
+
+  var drawgraph = function (data) {
+    drawTimer = window.setInterval(function () {
       onedraw()
     }, 100)
     console.log('draw')
   }
+
+  $('#range').on('input', function () {
+    $('#numi').val($('#range').val())
+    window.clearInterval(drawTimer)
+    $('#play').prop('disabled', false)
+    vis.selectAll('.line').remove()
+    i = $('#range').val()
+    onedraw()
+  })
+
+  $('#numi').click(function (e) {
+    window.clearInterval(drawTimer)
+    $('#play').prop('disabled', false)
+  })
+
+  $('#numi').change(function (e) {
+    window.clearInterval(drawTimer)
+    $('#play').prop('disabled', false)
+    vis.selectAll('.line').remove()
+    i = $('#numi').val()
+    onedraw()
+  })
+
+  $('#play').click(function (e) {
+    console.log('Play Clicked')
+    drawTimer = window.setInterval(function () {
+      onedraw()
+    }, 100)
+    $('#play').prop('disabled', true)
+  })
+
+  $('#pause').click(function (e) {
+    console.log('Play Clicked')
+    window.clearInterval(drawTimer)
+    $('#play').prop('disabled', false)
+  })
+
+
 }

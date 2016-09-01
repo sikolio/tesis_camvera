@@ -15,6 +15,6 @@
     "request": "latest"
   },
   "standard": {
-    "globals": ["angular", "d3"]
+    "globals": ["angular", "d3", "$"]
   }
 }
